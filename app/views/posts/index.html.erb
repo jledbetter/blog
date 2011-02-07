@@ -1,24 +1,14 @@
-<h1>Listing posts</h1>
+<h1>Diary of a slayer of the dead</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<h3><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
+<p>by <%= post.name %></p>
+<div id="post-content">
+  <%= post.content %>
+</div>
 <% end %>
 </table>
 
