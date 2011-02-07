@@ -4,7 +4,7 @@
 
 
 <% @posts.each do |post| %>
-<h3><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
+<h3><%= link_to post.title, post %></h3>
 <p>by <%= post.name %></p>
 <div id="post-content">
   <%= post.content %>
