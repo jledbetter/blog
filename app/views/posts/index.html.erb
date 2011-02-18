@@ -1,17 +1,15 @@
-<h1>Diary of a slayer of the dead</h1>
-
-
-
+<h1>Zombie Fans</h1>
 
 <% @posts.each do |post| %>
-<h3><%= link_to post.title, post %></h3>
-<p>by <%= post.name %></p>
-<div id="post-content">
-  <%= post.content %>
-</div>
+  <h3><%= link_to post.title, post %></h3>
+  
+  <p>by <%= post.name %></p>
+  
+  <div id="post-content">
+    <%= post.content %>
+  </div>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Post', new_post_path %>
+<p>
+  <%= link_to 'New Post', new_post_path %>
+</p>
