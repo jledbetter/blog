@@ -1,4 +1,4 @@
-1298064450
+1298086991
 Application	/home/jessica/vagrant/shared/blog/config/application.rb	  class Application 
 ApplicationController	/home/jessica/vagrant/shared/blog/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/jessica/vagrant/shared/blog/app/helpers/application_helper.rb	module ApplicationHelper
@@ -13,6 +13,7 @@ CommentsHelperTest	/home/jessica/vagrant/shared/blog/test/unit/helpers/comments_
 CreateComments	/home/jessica/vagrant/shared/blog/db/migrate/20110206210443_create_comments.rb	class CreateComments 
 CreatePosts	/home/jessica/vagrant/shared/blog/db/migrate/20110206203007_create_posts.rb	class CreatePosts 
 CreateTags	/home/jessica/vagrant/shared/blog/db/migrate/20110206215754_create_tags.rb	class CreateTags 
+DeviseCreateUsers	/home/jessica/vagrant/shared/blog/db/migrate/20110219022250_devise_create_users.rb	class DeviseCreateUsers 
 HomeController	/home/jessica/vagrant/shared/blog/app/controllers/home_controller.rb	class HomeController 
 HomeControllerTest	/home/jessica/vagrant/shared/blog/test/functional/home_controller_test.rb	class HomeControllerTest 
 HomeHelper	/home/jessica/vagrant/shared/blog/app/helpers/home_helper.rb	module HomeHelper
@@ -28,6 +29,8 @@ Tag	/home/jessica/vagrant/shared/blog/app/models/tag.rb	class Tag
 TagTest	/home/jessica/vagrant/shared/blog/test/unit/tag_test.rb	class TagTest 
 TestCase	/home/jessica/vagrant/shared/blog/test/test_helper.rb	class ActiveSupport::TestCase
 Type	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function Type(o)
+User	/home/jessica/vagrant/shared/blog/app/models/user.rb	class User 
+UserTest	/home/jessica/vagrant/shared/blog/test/unit/user_test.rb	class UserTest 
 abs	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function abs()
 absolutize	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function absolutize(element)
 addMethods	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function addMethods(source)
@@ -35,7 +38,6 @@ addText	/home/jessica/vagrant/shared/blog/public/javascripts/controls.js	functio
 all	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function all(iterator, context)
 any	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function argumentNames()
-authenticate	/home/jessica/vagrant/shared/blog/app/controllers/application_controller.rb	  def authenticate
 bind	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function blank()
@@ -72,6 +74,7 @@ dispatch	/home/jessica/vagrant/shared/blog/public/javascripts/effects.js	functio
 down	/home/jessica/vagrant/shared/blog/db/migrate/20110206203007_create_posts.rb	  def self.down
 down	/home/jessica/vagrant/shared/blog/db/migrate/20110206210443_create_comments.rb	  def self.down
 down	/home/jessica/vagrant/shared/blog/db/migrate/20110206215754_create_tags.rb	  def self.down
+down	/home/jessica/vagrant/shared/blog/db/migrate/20110219022250_devise_create_users.rb	  def self.down
 each	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function each(iterator)
 each	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -223,6 +226,7 @@ unset	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function
 up	/home/jessica/vagrant/shared/blog/db/migrate/20110206203007_create_posts.rb	  def self.up
 up	/home/jessica/vagrant/shared/blog/db/migrate/20110206210443_create_comments.rb	  def self.up
 up	/home/jessica/vagrant/shared/blog/db/migrate/20110206215754_create_tags.rb	  def self.up
+up	/home/jessica/vagrant/shared/blog/db/migrate/20110219022250_devise_create_users.rb	  def self.up
 update	/home/jessica/vagrant/shared/blog/app/controllers/posts_controller.rb	  def update
 update	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function update(array, args)
 update	/home/jessica/vagrant/shared/blog/public/javascripts/prototype.js	function update(element, content)
